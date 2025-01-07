@@ -64,14 +64,4 @@ class ConfigReader:
         except Exception as e:
             raise ValueError(f"Error reading JSON file: {e}")
 
-# Usage
-if __name__ == "__main__":
-    try:
-        config_reader = ConfigReader()
-        config = config_reader.read_config()
-        print("Configuration Loaded:")
-        print(config)
-    except Exception as e:
-        print(f"Error: {e}")
-
 
