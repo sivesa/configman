@@ -1,0 +1,36 @@
+{
+    "database": {
+        "host": "127.0.0.1",
+        "port": 5432,
+        "name": "my_database",
+        "user": "admin",
+        "password": "super_secret_password"
+    },
+    "application": {
+        "name": "ComplexApp",
+        "version": "2.5.1",
+        "maintenance_mode": false
+    },
+    "logging": {
+        "level": "DEBUG",
+        "file": {
+            "path": "/var/log/app_logs",
+            "rotation": {
+                "daily": true
+            }
+        }
+    },
+    "server": {
+        "host": "192.168.1.100",
+        "port": 8080,
+        "threads": {
+            "max": 200,
+            "min": 10
+        }
+    },
+    "features": {
+        "new_ui_enabled": true,
+        "experiment_mode": false
+    }
+}
+

@@ -3,7 +3,7 @@ import json
 import xml.etree.ElementTree as ET
 
 class ConfigReader:
-    def __init__(self, config_filename="config_simple.properties"):
+    def __init__(self, config_filename="config_complex.xml"):
         # Dynamically determine the base directory
         self.base_dir = os.path.dirname(os.path.abspath(__file__))
         self.config_dir = os.path.join(self.base_dir, "config")
@@ -73,26 +73,5 @@ if __name__ == "__main__":
         print(config)
     except Exception as e:
         print(f"Error: {e}")
-
-# Usage
-#if __name__ == "__main__":
-#    test_files = [
-#         "config_simple.xml",
-#         "config_complex.xml",
-#         "config_simple.properties",
-#        "config_complex.properties",
-#        "config_simple.json",
-#        "config_complex.json"
-#    ]
-#    
-#    for test_file in test_files:
-#        try:
-#            print(f"\nTesting file: {test_file}")
-#            config_reader = ConfigReader(config_filename=test_file)
-#            config = config_reader.read_config()
-#            print("Configuration Loaded:")
-#            print(config)
-#        except Exception as e:
-#            print(f"Error: {e}")
 
 
