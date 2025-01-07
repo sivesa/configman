@@ -11,6 +11,12 @@ class ConfigReader:
         if not os.path.exists(self.config_file):
             raise FileNotFoundError(f"Configuration file not found: {self.config_file}")
 
+    def read_config(self):
+        pass
+
+    def _parse_xml_to_dict(self, element):
+        pass
+        
 # Usage
 if __name__ == "__main__":
     try:
